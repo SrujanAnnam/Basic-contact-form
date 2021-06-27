@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  section .contact{
+    padding: 10px 10px;
+  }
+  .section-title{
+    position: relative;
+    color: black;
+    font-size: 2.2em;
+    font-family: 'Sacramento', cursive;
+    font-weight: 800;
+    margin-bottom: 60px;
+  }
+  
+  .section-title:before{
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 140px;
+    height: 4px;
+    background: black;
+    transform: translateX(-50%);
+  }
+  
+  .section-title:after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
+    transform: translateX(-50%);
+  }
+  .contact-form {
+        transform: translateY(0);
+        opacity: 1;
+        position: relative;
+        transition: all 1.5s ease;
+        background: #fff;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+  }
+  .contact-form h1{
+      color: black;
+      font-family:  Agency FB;
+      text-shadow: 2px 2px 2px #0000006e;
+        color: #111;
+      font-size: 1.6em;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 40px;
+  }
+  .col-75 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  ::placeholder {/* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: black;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: black;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    resize: vertical;
+    font-size:20px;
+    background-color: transparent;
+  }
+  
+  
+  input[type=submit] {
+    background-color: transparent;
+    color: black;
+    padding: 12px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: black;
+    color: white;
+  }
+  .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: 1040px){
+    .contact-form{
+        padding: 35px 40px;
+      }
+      .section-title{
+        font-size: 1.8em;
+      }
+    }
+    
